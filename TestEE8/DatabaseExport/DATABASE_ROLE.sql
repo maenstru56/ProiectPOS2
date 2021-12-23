@@ -1,0 +1,3 @@
+INSERT INTO ROLE ( ROLE) VALUES ( 'cashier');
+INSERT INTO ROLE ( ROLE) VALUES ( 'director');
+INSERT INTO ROLE ( ROLE) VALUES ( 'admin');
