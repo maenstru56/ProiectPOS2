@@ -15,7 +15,7 @@ public class UserBean {
     private EntityManager em;
 
     public void CreateUser(String username, String password, int role, String email){
-        //System.getProperties().setProperty("derby.language.sequence.preallocator", String.valueOf(1));
+        System.getProperties().setProperty("derby.language.sequence.preallocator", String.valueOf(1));
 
         UserTableEntity user = new UserTableEntity();
 
