@@ -16,7 +16,7 @@ public class AddProduct extends HttpServlet {
 
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-
+        productBean.createProduct("Lapte", 1, 500.0, 1, "invalid");
     }
 
     @Override

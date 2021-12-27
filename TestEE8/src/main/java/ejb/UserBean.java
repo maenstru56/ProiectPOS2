@@ -1,5 +1,6 @@
 package ejb;
 
+import entity.ProductEntity;
 import entity.UserTableEntity;
 
 import javax.ejb.EJBException;
@@ -36,6 +37,13 @@ public class UserBean {
         } catch (Exception ex) {
             throw new EJBException(ex);
         }
+    }
+
+    public String getPasswordByUsername(String username) {
+        Query query = em.createQuery("SELECT u FROM UserTableEntity u WHERE u.username = :username").setParameter("username", username).setMaxResults(1);
+        UserTableEntity user = (UserTableEntity) query.getSingleResult();
+
+        return user.getPassword();
     }
 
 }

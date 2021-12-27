@@ -16,6 +16,7 @@
         <class>entity.UserTableEntity</class>
         <properties>
             <property name="eclipselink.jdbc.driver" value="org.apache.derby.jdbc.EmbeddedDriver"/>
+            <property name="eclipselink.ddl-generation" value="create-or-extend-tables" />
         </properties>
     </persistence-unit>
 </persistence>
