@@ -1,3 +1,7 @@
 
 TestEE8/.idea/vcs.xml
 TestEE8/TestEE8.iml
+*.class
+TestEE8/.idea/vcs.xml
+TestEE8/target/classes/ejb/UserBean.class
+TestEE8/target/TestEE8-1.0-SNAPSHOT/META-INF/MANIFEST.MF
