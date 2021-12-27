@@ -19,10 +19,11 @@ public class ShowAllProducts extends HttpServlet {
 
 
     List<ProductEntity> allProducts;
-
+    @Override
     public void init(){
         allProducts = productBean.getAllProducts();
     }
+    
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         //Set response to html page
